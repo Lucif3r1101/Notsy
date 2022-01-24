@@ -60,7 +60,7 @@ fun NotesScreen(
                 verticalAlignment = Alignment.CenterVertically
             ){
                 Text(
-                    text = "Notsy",
+                    text = "Notes",
                     style = MaterialTheme.typography.h4
                 )
                 IconButton(onClick = {
@@ -81,11 +81,8 @@ fun NotesScreen(
                 OrderSection(
                     modifier = Modifier
                         .fillMaxWidth()
-<<<<<<< HEAD
                         .padding(vertical = 24.dp),
-=======
-                        .padding(vertical = 16.dp),
->>>>>>> 0ffdb67c620d355fd3f6abc52c3852d9762de8c6
+
                     noteOrder = state.noteOrder,
                     onOrderChange = {
                         viewModel.onEvent(NotesEvent.Order(it))
@@ -93,11 +90,8 @@ fun NotesScreen(
                 )
 
             }
-<<<<<<< HEAD
+
             Spacer(modifier = Modifier.height(24.dp))
-=======
-            Spacer(modifier = Modifier.height(16.dp))
->>>>>>> 0ffdb67c620d355fd3f6abc52c3852d9762de8c6
             LazyColumn(modifier = Modifier.fillMaxSize()) {
                 items(state.notes) { note ->
                     NoteItem(
@@ -123,11 +117,9 @@ fun NotesScreen(
                             }
                         }
                     )
-<<<<<<< HEAD
+
                     Spacer(modifier = Modifier.height(24.dp))
-=======
-                    Spacer(modifier = Modifier.height(16.dp))
->>>>>>> 0ffdb67c620d355fd3f6abc52c3852d9762de8c6
+
                 }
             }
         }

@@ -29,11 +29,8 @@ fun OrderSection(
 
            Spacer(modifier = Modifier.width(8.dp))
            DefaultRadioButton(
-<<<<<<< HEAD
+
                text = "Date",
-=======
-               text = "By Date",
->>>>>>> 0ffdb67c620d355fd3f6abc52c3852d9762de8c6
                selected = noteOrder is NoteOrder.Date,
                onSelect = { onOrderChange(NoteOrder.Date(noteOrder.orderType)) })
 
